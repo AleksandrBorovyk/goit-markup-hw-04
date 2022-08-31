@@ -75,15 +75,14 @@ body {
         border-bottom: 1px solid #ECECEC;   
 }
 .page-header-portfolio {
-    padding-bottom: 94px;
-    
+    border-bottom: 1px solid #ECECEC;  
 }
 /* Site nav */
 .header-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
+   /* border-bottom: 1px solid #ECECEC; */
 }
 .site-nav {
     display: flex;
@@ -160,6 +159,7 @@ body {
 }
 .filter-list {
         display: flex;
+        padding-top: 94px;
         margin-bottom: 50px;
         align-items: center;
         justify-content: center;
@@ -229,6 +229,7 @@ body {
 }
 .porfolio-box .portfolio-project {
     font-size: 16px;
+    color: #757575;
 }
 
 /*.hero {
@@ -260,27 +261,41 @@ body {
         color:var(--white-color);
 }
 .hero-button {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
+   display: block;
+    width: 216px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
         /* identical to box height, or 188% */
     
-        background-color: var(--accent-color);
-        color: var(--white-color);
+    background-color: var(--accent-color);
+    color: var(--white-color);
 }
 .hero-button:hover,
 .hero-button:focus {
     background: #188CE8;
     color: var(--white-color);
 }
-.our-benefits-item {
+/*.our-benefits-item {
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
+}   */
+.benefit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 .our-benefits {
     display: flex;
@@ -307,8 +322,8 @@ body {
 .benefits-list .benefits-item:not(:last-child) {
     margin-right: 30px;
 }
-.benefits-item {
-    width: 270px;
+/*.benefits-item {
+    width: 270px;*/
 }
 .section-title-list {
         margin-bottom: 10px;
@@ -317,6 +332,7 @@ body {
     padding-bottom: 94px;
 }
 .section-title {
+    margin-top: 94px;
         margin-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
@@ -351,11 +367,12 @@ body {
     padding-bottom: 94px;
 }
 .our-team {
-    background-color: var(--white-color);
+    background-color: #F5F4FA;;
     
 }
 .team-list {
     display: flex;
+    
 }
 .team-item:not(:last-child) {
     margin-right: 32px;
@@ -537,10 +554,10 @@ body {
     background-color:#FFFFFF;
     background-image: url(../images/envelope.svg);
 }
-/*.icon:hover,
+.icon:hover,
 .icon:focus {
     fill: var(--accent-color);
-} */
+}
 .icon-phon {
     display: inline-flex;
     align-items: center;
