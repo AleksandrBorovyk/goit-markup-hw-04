@@ -33,6 +33,10 @@ ol {
 button {
     cursor: pointer;
 }
+.header-mail:hover,
+header-mail:focus {
+    color: var(--accent-color);
+}
 /* Main-nav*/
 .container {
     width: 1200px;
@@ -117,6 +121,7 @@ body {
 .auth-nav .item + .item{
     margin-left: 50px;
 }
+
 /*.auth-nav .item {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -440,11 +445,12 @@ body {
 }
 .client-list-link {
     display: flex;
-    width: 106px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
-
+    border: 1px solid #AFB1B8;
+    border-radius: 4px 4px 4px 4px;
     
     background-color: var(--white-color);
 }
@@ -454,12 +460,13 @@ body {
     height: 92px;
     align-items: center;
     justify-content: center;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px 4px 4px 4px;
+    
 }
 .client-list-icon {
     display: flex;
     fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
 }
 .client-list-icon:hover,
 .client-list-icon:focus {
@@ -470,12 +477,15 @@ body {
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
     background-color: #2F303A;
 }
 .logo-footer {
     display: inline-block;
     margin-bottom: 20px;
+}
+.footer-box {
+    display: flex;
+    
 }
 .page-footer span {
     color: var(--white-color);
@@ -530,11 +540,14 @@ body {
     display: flex; 
 }
 .footer-social {
-    display: flex;
+    padding-left: 70px;
+    padding-top: 10px;
+    
     align-items: center;
     justify-content: left;  
 }
 .call {
+    margin-bottom: 20px;
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -567,3 +580,4 @@ body {
     background-color: #FFFFFF;
     background-image: url(../images/smartphone@2x.svg);
 }
+
